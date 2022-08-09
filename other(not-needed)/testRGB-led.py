@@ -4,8 +4,10 @@
 import RPi.GPIO as GPIO
 import time
 
+GPIO.setmode(GPIO.BCM)
+
 # Pin Definitons:
-ledPin = 17 # Broadcom pin 17 
+ledPin = 17 # Broadcom pin 23 (P1 pin 16)
 
 
 
@@ -20,8 +22,5 @@ print("Here we go! Press CTRL+C to exit")
 try:
     while 1:
         GPIO.output(ledPin, GPIO.HIGH)
-        time.sleep(0.075)
-        GPIO.output(ledPin, GPIO.LOW)
-        time.sleep(0.075)
 except KeyboardInterrupt: # If CTRL+C is pressed, exit cleanly:
     GPIO.cleanup() # cleanup all GPIO
