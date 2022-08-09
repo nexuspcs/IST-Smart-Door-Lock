@@ -1,4 +1,4 @@
-## IST-Smart-Door-Lock
+# IST-Smart-Door-Lock
 ___
 
 This GitHub repository contains both the Python (.py) and the JavaScript (.js) code for my Task 2 IST assessment.
