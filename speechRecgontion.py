@@ -83,14 +83,12 @@ while(1):
                                         pwm.ChangeDutyCycle(0)
                                 SetAngle(90)
 
-                                
 
-                        
-
-                        # lock
+                        # lock function
                         if MyText == LockPhrase or MyText == LockPhrase1 or MyText == LockPhrase2:
                                 print("Valid phrase, locking now...")
                                 
+                                # some simple math for Pulse width Modulation 
                                 def SetAngle(angle):
                                         duty = angle / 18 + 2
                                         GPIO.output(8, True)
