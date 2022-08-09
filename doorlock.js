@@ -2,7 +2,7 @@
 
 // ^^ above command tells shell to use Node.JS ^^ 
 
-var BLYNK_TEMPLATE_ID = 'TMPLISLOZuxh'
+var BLYNK_TEMPLATE_ID = 'TMPLISLOZuxh' // This ID is your 'Orginisations' template ID, which is just my personal account in my use case.
 var BLYNK_DEVICE_NAME = 'Door1' 
 var BLYNK_AUTH_TOKEN = 'JMWyTq4EIyRiUv0aUTmnU7SIuhlzWIrE'
 var SERVER_ADDR = 'https://sgp1.blynk.cloud/'
