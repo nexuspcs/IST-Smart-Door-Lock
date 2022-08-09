@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+// ^^ above command tells shell to use Node.JS ^^ 
 
 var BLYNK_TEMPLATE_ID = 'TMPLISLOZuxh'
 var BLYNK_DEVICE_NAME = 'Door1' 
