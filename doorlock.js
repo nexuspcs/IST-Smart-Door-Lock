@@ -113,9 +113,9 @@ connector : new Blynk.TcpClient()
 //**                         */
 
 
-var v0 = new blynk.VirtualPin(0);
+var v0 = new blynk.VirtualPin(0); // aka V0
 
-console.log("locking door")
+console.log("locking door") 
 lockDoor()
 
 button.on('interrupt', function (level) {
