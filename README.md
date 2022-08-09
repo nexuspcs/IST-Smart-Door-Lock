@@ -10,7 +10,7 @@ Click [here](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/doorlock.
 ]()
 
 
-<img src="imgs/python.png" alt="python" href="https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRecgontion.py" width="200"/>
+<img src="imgs/python.png" alt="python" a="https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRecgontion.py" width="200"/>
 
 
 
