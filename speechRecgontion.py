@@ -11,7 +11,7 @@ import time
 # END: Importing Dependencies/Librarys
 
 
-#initilasing the gpio pins
+# initilasing the gpio pins
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(8, GPIO.OUT)
 GPIO.setup(13, GPIO.OUT)
@@ -35,13 +35,13 @@ LockPhrase1 = "lock the door"
 LockPhrase2 = "turtle"
 
 
-# Initialize the recogniser
+# Initialising the recogniser
 r = sr.Recognizer()
 
 
 # Function to convert text to speech
 def SpeakText(command):
-        # Initialize the engine
+        # Initialise the engine
         engine = pyttsx3.init()
         engine.say(command)
         engine.runAndWait()
