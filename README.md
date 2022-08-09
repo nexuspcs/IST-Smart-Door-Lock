@@ -7,7 +7,14 @@ Click [here](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/doorlock.
 
 --
 [![](imgs/python.png)
-](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRecgontion.py)**Click Python logo for the speech recgonition code**
+]()
+
+
+<img src="imgs/python.png" alt="python" href="https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRecgontion.py" width="200"/>
+
+
+
+**Click Python logo for the speech recgonition code**
 
 [![](imgs/js.png)
 ](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/doorlock.js)**Click JS logo for the smartphone-controlled code**
