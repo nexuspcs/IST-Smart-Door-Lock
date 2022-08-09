@@ -18,7 +18,7 @@ GPIO.setup(13, GPIO.OUT)
 pwm=GPIO.PWM(8, 50)
 pwm.start(0)
 
-#initilasing the gpio pins
+# initilasing the servo motor
 GPIO.output(13, GPIO.HIGH)
 
 # unlock varibles
