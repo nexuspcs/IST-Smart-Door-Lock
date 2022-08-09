@@ -19,14 +19,10 @@ GPIO.output(ledPin, GPIO.LOW)
 print("Here we go! Press CTRL+C to exit")
 try:
     while 1:
-        if GPIO.input(butPin): # button is released
-            pwm.ChangeDutyCycle(dc)
-            GPIO.output(ledPin, GPIO.LOW)
-        else: # button is pressed:
-            pwm.ChangeDutyCycle(100-dc)
-            GPIO.output(ledPin, GPIO.HIGH)
-            time.sleep(0.075)
-            GPIO.output(ledPin, GPIO.LOW)
-            time.sleep(0.075)
+        pwm.ChangeDutyCycle(100-dc)
+        GPIO.output(ledPin, GPIO.HIGH)
+        time.sleep(0.075)
+        GPIO.output(ledPin, GPIO.LOW)
+        time.sleep(0.075)
 except KeyboardInterrupt: # If CTRL+C is pressed, exit cleanly:
     GPIO.cleanup() # cleanup all GPIO
