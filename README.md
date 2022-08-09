@@ -10,8 +10,8 @@ Click [here](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/doorlock.
 ]()
 
 
-<img src="imgs/python.png" alt="python" a="https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRecgontion.py" width="200"/>
-
+[<img src="imgs/python.png" alt="python" width="200"/>
+](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRecgontion.py)
 
 
 **Click Python logo for the speech recgonition code**
