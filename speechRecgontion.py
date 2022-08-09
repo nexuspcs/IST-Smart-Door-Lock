@@ -1,9 +1,6 @@
-# code is to be added from the Rasp. pi soon...
 
-
-
-# Python program for ist 
-# smart door-lock project 
+# ~~~  Python program for ist 
+#      smart door-lock project  ~~~
 
 # START: Importing Dependencies/Librarys
 import speech_recognition as sr
