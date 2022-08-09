@@ -145,6 +145,7 @@ v0.on('write', function(param) {
         }
 });
 
+//* ignore, not used right now *// 
 //blynk.on('connect', function() { console.log("Blynk ready?"); });
 //blynk.on('disconnect', function() { console.log("DISCONNECT"); });
 
