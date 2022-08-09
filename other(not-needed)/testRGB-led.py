@@ -19,7 +19,6 @@ GPIO.output(ledPin, GPIO.LOW)
 print("Here we go! Press CTRL+C to exit")
 try:
     while 1:
-        pwm.ChangeDutyCycle(100-dc)
         GPIO.output(ledPin, GPIO.HIGH)
         time.sleep(0.075)
         GPIO.output(ledPin, GPIO.LOW)
