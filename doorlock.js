@@ -2,6 +2,11 @@
 
 // ^^ above command tells shell to use Node.JS ^^ 
 
+//::START:://
+// ~~~  Python program for ist      //
+//     smart door-lock project  ~~~ //
+
+
 var BLYNK_TEMPLATE_ID = 'TMPLISLOZuxh' // This ID is your 'Orginisations' template ID, which is just my personal account in my use case.
 var BLYNK_DEVICE_NAME = 'Door1' // Device name is the name you will see in the Blynk app
 var BLYNK_AUTH_TOKEN = 'JMWyTq4EIyRiUv0aUTmnU7SIuhlz****' // my accounts auth token, which you wont be able to do anything with unless you have my email as well. LAST 4 characters a redacted due to privacy...
@@ -155,7 +160,7 @@ function lockDoor() {
         ledGreen.digitalWrite(1);
         locked = true
 
-        //notify
+        //notify on app/web
         blynk.notify("Door has been locked!");
   
         //After 1.5 seconds, the door lock servo turns off to avoid stall current
@@ -169,7 +174,7 @@ function unlockDoor() {
         ledRed.digitalWrite(1);
         locked = false
 
-        //notify
+        //notify on app/web
         blynk.notify("Door has been unlocked!"); 
 
         //After 1.5 seconds, the door lock servo turns off to avoid stall current
