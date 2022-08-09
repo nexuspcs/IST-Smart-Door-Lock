@@ -18,26 +18,29 @@ GPIO.setup(13, GPIO.OUT)
 pwm=GPIO.PWM(8, 50)
 pwm.start(0)
 
+
 # initilasing the servo motor
 GPIO.output(13, GPIO.HIGH)
+
 
 # unlock varibles
 UnlockPhrase = "unlock door"
 UnlockPhrase1 = "unlock the door"
 UnlockPhrase2 = "porpoise"
 
+
 # lock varibles
 LockPhrase = "lock door"
 LockPhrase1 = "lock the door"
 LockPhrase2 = "turtle"
 
-# Initialize the recognizer
+
+# Initialize the recogniser
 r = sr.Recognizer()
 
-# Function to convert text to
-# speech
+
+# Function to convert text to speech
 def SpeakText(command):
-        
         # Initialize the engine
         engine = pyttsx3.init()
         engine.say(command)
