@@ -94,7 +94,7 @@ var Gpio = require('pigpio').Gpio,
   ledGreen = new Gpio(ledPinGreen, {mode: Gpio.OUTPUT});
   ledRed = new Gpio(ledPinRed, {mode: Gpio.OUTPUT});
 
-// Setup BLynk
+// Setup Blynk
 var Blynk = require('blynk-library');
 var blynk = new Blynk.Blynk(blynkToken, options = { 
 connector : new Blynk.TcpClient()
