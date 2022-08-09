@@ -47,24 +47,21 @@ def SpeakText(command):
         engine.runAndWait()
         
         
-# Loop infinitely for user to
-# speak
-
+# Loop infinitely for user to speak (a.k.a waiting for user input) 
 while(1):
         
-        # Exception handling to handle
-        # exceptions at the runtime
+        # Exception handling to handle exceptions at/with the runtime
         try:
                 
-                # use the microphone as source for input.
+                # Use the microphone as source for input.
                 with sr.Microphone() as source2:
-                        # wait for a second to let the recognizer
+                        # wait for a second to let the recogniser
                         # adjust the energy threshold based on
-                        # the surrounding noise level
+                        # the surrounding noise level (a.k.a noise reduction)
                         r.adjust_for_ambient_noise(source2, duration=0.2)
                         #listens for the user's input
                         audio2 = r.listen(source2)
-                        # Using google to recognize audio
+                        # Using google's **local** libary, on the Pi to recognise audio
                         MyText = r.recognize_google(audio2)
                         MyText = MyText.lower()
 
@@ -72,10 +69,11 @@ while(1):
                         SpeakText(MyText)
 
 
-                        # unlock
+                        # unlock function 
                         if MyText == UnlockPhrase or MyText == UnlockPhrase1 or MyText == UnlockPhrase2:
                                 print("Valid phrase, unlocking now...")
                                 
+                                # some simple math for Pulse width Modulation 
                                 def SetAngle(angle):
                                         duty = angle / 18 + 2
                                         GPIO.output(8, True)
