@@ -5,7 +5,7 @@
 # START: Importing Dependencies/Librarys
 import speech_recognition as sr
 import pyttsx3
-import RPi.GPIO as GPIO # Library for servo motor control
+import RPi.GPIO as GPIO # Library for servo motor control and LEDs
 from time import sleep # Delays 
 import time
 # END: Importing Dependencies/Librarys
