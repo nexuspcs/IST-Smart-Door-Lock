@@ -6,6 +6,7 @@ Click [here](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRec
 Click [here](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/doorlock.js) for the Blynk.io code (JavaScript).
 
 --
+<br>
 [<img src="imgs/python.png" alt="python" width="200"/>
 ](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRecgontion.py)
 
