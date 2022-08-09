@@ -22,5 +22,5 @@ Click [here](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/doorlock.
 **Click JS logo for the smartphone-controlled code**
 
 
-| [<img src="imgs/python.png" alt="python" width="200"/> ](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRecgontion.py)<br>**Click Python logo for the speech recgonition code** | [img src="imgs/js.png" alt="python" width="200"/> ](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/doorlock.js)<br>**Click JS logo for the smartphone-controlled code** |
+| [<img src="imgs/python.png" alt="python" width="200"/> ](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/speechRecgontion.py)<br>**Click Python logo for the speech recgonition code** | [<img src="imgs/js.png" alt="python" width="120"/> ](https://github.com/nexuspcs/IST-Smart-Door-Lock/blob/main/doorlock.js)<br>**Click JS logo for the smartphone-controlled code** |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
