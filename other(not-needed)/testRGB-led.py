@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 import time
 
 # Pin Definitons:
-ledPin = 23 # Broadcom pin 23 (P1 pin 16)
+ledPin = 17 # Broadcom pin 23 (P1 pin 16)
 
 
 
