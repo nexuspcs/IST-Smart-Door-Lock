@@ -38,12 +38,12 @@ var SERVER_ADDR = 'https://sgp1.blynk.cloud/' // Sinapore server address
 // **************************************** //
 
 
-var unlockedState = 1000; // was 1000
-var lockedState = 1800; // was 2200
+var unlockedState = 1000; // was 1000, now will always use 1000
+var lockedState = 1800; // was 2200, now will always use 1800
 // difference of 800 is approx. 90 deg 
 
 
-// DELTE THIS IS NOTHING FIXES
+// DELTE THIS IF disconnect issues... FROM this line to....
 disconnect = function (reconnect) {
     console.log('Disconnect blynk');
     if (typeof reconnect === 'undefined') {
@@ -66,7 +66,7 @@ disconnect = function (reconnect) {
         setTimeout(function () { self.connect() }, 5000);
     }
 }
-// INSIDE HERE 
+// ... This line
 
 
 
