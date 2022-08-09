@@ -75,15 +75,15 @@ var buttonPin = 4
 var ledPinGreen = 17
 var ledPinRed = 11 
 
-var blynkToken = 'JMWyTq4EIyRiUv0aUTmnU7SIuhlzWIrE';
+var blynkToken = 'JMWyTq4EIyRiUv0aUTmnU7SIuhlzWIrE'; // redefine as i already wrote the code, but i need to define the value twice, once for BlynkAUTH, and once for BlynkCONNECTION
 
 
 
-// *** Start code *** //
+// *** Start main code *** //
 
-var locked = true
+var locked = true // bein locked by defualt when script is run 
 
-//Setup servo
+// Setup the servo
 var Gpio = require('pigpio').Gpio,
   motor = new Gpio(motorPin, {mode: Gpio.OUTPUT}),
   button = new Gpio(buttonPin, {
