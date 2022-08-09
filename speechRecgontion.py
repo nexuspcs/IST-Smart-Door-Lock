@@ -19,6 +19,16 @@ pwm=GPIO.PWM(8, 50)
 pwm.start(0)
 
 
+ledPinRed = 11
+GPIO.setup(ledPinRed, GPIO.OUT)
+ledPinGreen = 23
+GPIO.setup(ledPinGreen, GPIO.OUT)
+
+GPIO.output(ledPinRed, GPIO.HIGH)
+GPIO.output(ledPinGreen, GPIO.HIGH)
+
+
+
 # initilasing the servo motor
 GPIO.output(13, GPIO.HIGH)
 
@@ -72,6 +82,8 @@ while(1):
                         # unlock function 
                         if MyText == UnlockPhrase or MyText == UnlockPhrase1 or MyText == UnlockPhrase2:
                                 print("Valid phrase, unlocking now...")
+                                GPIO.output(ledPinGreen, GPIO.LOW)
+                                GPIO.output(ledPinRed, GPIO.HIGH)
                                 
                                 # some simple math for Pulse width Modulation 
                                 def SetAngle(angle):
@@ -87,6 +99,8 @@ while(1):
                         # lock function
                         if MyText == LockPhrase or MyText == LockPhrase1 or MyText == LockPhrase2:
                                 print("Valid phrase, locking now...")
+                                GPIO.output(ledPinGreen, GPIO.HIGH)
+                                GPIO.output(ledPinRed, GPIO.LOW)
                                 
                                 # some simple math for Pulse width Modulation 
                                 def SetAngle(angle):
@@ -106,8 +120,11 @@ while(1):
         # if unable to recgonise audio/user input, print error message
         except sr.UnknownValueError:
                 print("unknown error occured, most likely an unknown phrase or language")
-                
-                
+    
+        except KeyboardInterrupt:
+                GPIO.output(ledPinRed, GPIO.HIGH)
+                GPIO.output(ledPinGreen, GPIO.HIGH)
+                exit()
 #::END::#
 # ~~~  Python program for ist 
 #      smart door-lock project  ~~~
