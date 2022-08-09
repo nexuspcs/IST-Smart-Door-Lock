@@ -5,8 +5,8 @@
 //::START:://
 //
 //
-// ~~~  Python program for ist      //
-//     smart door-lock project  ~~~ //
+// ~~~  JavaScript program for ist      //
+//     smart door-lock project  ~~~    //
 //
 //
 
@@ -184,3 +184,12 @@ function unlockDoor() {
         setTimeout(function(){motor.servoWrite(0)}, 1500)
 
 }
+
+
+//::END:://
+//
+//
+// ~~~  JavaScript program for ist      //
+//     smart door-lock project  ~~~     //
+//
+//
