@@ -1,4 +1,4 @@
-
+#::START::#
 # ~~~  Python program for ist 
 #      smart door-lock project  ~~~
 
@@ -98,9 +98,14 @@ while(1):
                                         pwm.ChangeDutyCycle(0)
                                 SetAngle(20)
 
-
+        # if libs unavailable during processing, print error message
         except sr.RequestError as e:
                 print("Could not request results; {0}".format(e))
 
+        # if unable to recgonise audio/user input, print error message
         except sr.UnknownValueError:
                 print("unknown error occured, most likely an unknown phrase or language")
+                
+#::END::#
+# ~~~  Python program for ist 
+#      smart door-lock project  ~~~
