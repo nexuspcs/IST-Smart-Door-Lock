@@ -1,4 +1,5 @@
 #::START::#
+# AUTHOR: JAMES COATES - 2022# 
 # ~~~  Python program for ist 
 #      smart door-lock project  ~~~
 

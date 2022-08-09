@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 // ^^ above command tells shell to use Node.JS ^^ 
-
+//
+// AUTHOR: JAMES COATES // 
 //::START:://
 //
 //
