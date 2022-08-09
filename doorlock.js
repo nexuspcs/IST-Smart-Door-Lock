@@ -118,6 +118,8 @@ var v0 = new blynk.VirtualPin(0); // aka V0
 console.log("locking door") 
 lockDoor()
 
+
+// The push-button function
 button.on('interrupt', function (level) {
         console.log("level: " + level + " locked: " + locked)
         if (level == 0) {
@@ -129,6 +131,7 @@ button.on('interrupt', function (level) {
         }
 });
 
+// The servo function (V0)
 v0.on('write', function(param) {
         console.log('V0:', param);
         if (param[0] === '0') { //unlocked
