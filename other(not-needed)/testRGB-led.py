@@ -10,15 +10,11 @@ ledPin = 23 # Broadcom pin 23 (P1 pin 16)
 
 
 # Pin Setup:
-GPIO.setmode(GPIO.BCM) # Broadcom pin-numbering scheme
 GPIO.setup(ledPin, GPIO.OUT) # LED pin set as output
-GPIO.setup(pwmPin, GPIO.OUT) # PWM pin set as output
-pwm = GPIO.PWM(pwmPin, 50)  # Initialize PWM on pwmPin 100Hz frequency
-GPIO.setup(butPin, GPIO.IN, pull_up_down=GPIO.PUD_UP) # Button pin set as input w/ pull-up
 
 # Initial state for LEDs:
 GPIO.output(ledPin, GPIO.LOW)
-pwm.start(dc)
+
 
 print("Here we go! Press CTRL+C to exit")
 try:
@@ -33,5 +29,4 @@ try:
             GPIO.output(ledPin, GPIO.LOW)
             time.sleep(0.075)
 except KeyboardInterrupt: # If CTRL+C is pressed, exit cleanly:
-    pwm.stop() # stop PWM
     GPIO.cleanup() # cleanup all GPIO
