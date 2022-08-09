@@ -100,7 +100,7 @@ var blynk = new Blynk.Blynk(blynkToken, options = {
 connector : new Blynk.TcpClient()
 });
 
-// the ssl one which does not connect:
+//**  */ the ssl part which does not connect:
 // 
 // var blynk = new Blynk.Blynk(blynkToken);
 //
@@ -110,6 +110,7 @@ connector : new Blynk.TcpClient()
 // var blynk = new Blynk.Blynk(blynkToken, options = { 
 // connector : new Blynk.TcpClient()
 // });
+//**                         */
 
 
 var v0 = new blynk.VirtualPin(0);
