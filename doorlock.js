@@ -3,9 +3,12 @@
 // ^^ above command tells shell to use Node.JS ^^ 
 
 //::START:://
+//
+//
 // ~~~  Python program for ist      //
 //     smart door-lock project  ~~~ //
-
+//
+//
 
 var BLYNK_TEMPLATE_ID = 'TMPLISLOZuxh' // This ID is your 'Orginisations' template ID, which is just my personal account in my use case.
 var BLYNK_DEVICE_NAME = 'Door1' // Device name is the name you will see in the Blynk app
