@@ -32,8 +32,8 @@ GPIO.setup(ledPinRed, GPIO.OUT) # setting the gpio pin as an output
 ledPinGreen = 23 # gpio pin for the green led
 GPIO.setup(ledPinGreen, GPIO.OUT) # setting the gpio pin as an output
 
-GPIO.output(ledPinRed, GPIO.HIGH)
-GPIO.output(ledPinGreen, GPIO.HIGH)
+GPIO.output(ledPinRed, GPIO.HIGH) # setting the gpio pin to high (a.k.a will turn off all leds)
+GPIO.output(ledPinGreen, GPIO.HIGH) # setting the gpio pin to high (a.k.a will turn off all leds)
 
 
 
