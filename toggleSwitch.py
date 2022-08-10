@@ -18,7 +18,7 @@ GPIO.setup(returnGPIOpin, GPIO.OUT)
 GPIO.output(returnGPIOpin, GPIO.LOW)
 
 
-
+#Initialising the servo motor
 GPIO.setup(8, GPIO.OUT)
 GPIO.setup(13, GPIO.OUT)
 pwm=GPIO.PWM(8, 50)
@@ -27,10 +27,10 @@ pwm.start(0)
 
 
 
-ledPinRed = 11
-GPIO.setup(ledPinRed, GPIO.OUT)
-ledPinGreen = 23
-GPIO.setup(ledPinGreen, GPIO.OUT)
+ledPinRed = 11 # gpio pin for the red led
+GPIO.setup(ledPinRed, GPIO.OUT) # setting the gpio pin as an output
+ledPinGreen = 23 # gpio pin for the green led
+GPIO.setup(ledPinGreen, GPIO.OUT) # setting the gpio pin as an output
 
 GPIO.output(ledPinRed, GPIO.HIGH)
 GPIO.output(ledPinGreen, GPIO.HIGH)
