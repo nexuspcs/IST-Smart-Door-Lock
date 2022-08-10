@@ -63,10 +63,5 @@ while True: # infinite loop
                         GPIO.output(8, False)
                         pwm.ChangeDutyCycle(0)
                 SetAngle(90)
-
-
-
-
-                
         else:
                 print("no switch position, dormant")
