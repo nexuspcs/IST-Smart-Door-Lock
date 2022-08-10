@@ -10,17 +10,15 @@ from time import sleep
 # END: Importing Dependencies/Librarys
 
 
-buttonInput = 29 # 
-returnGPIOpin = 31
+buttonInput = 29 # gpio pin for the button
+returnGPIOpin = 31 # gpio pin for the return signal of the button (a.k.a groud)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(buttonInput, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(returnGPIOpin, GPIO.OUT)
-
 GPIO.output(returnGPIOpin, GPIO.LOW)
 
 
 
-GPIO.setmode(GPIO.BOARD)
 GPIO.setup(8, GPIO.OUT)
 GPIO.setup(13, GPIO.OUT)
 pwm=GPIO.PWM(8, 50)
