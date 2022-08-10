@@ -26,8 +26,6 @@ pwm=GPIO.PWM(8, 50)
 pwm.start(0)
 
 
-
-
 ledPinRed = 11 # gpio pin for the red led
 GPIO.setup(ledPinRed, GPIO.OUT) # setting the gpio pin as an output
 ledPinGreen = 23 # gpio pin for the green led
@@ -35,13 +33,6 @@ GPIO.setup(ledPinGreen, GPIO.OUT) # setting the gpio pin as an output
 
 GPIO.output(ledPinRed, GPIO.HIGH) # setting the gpio pin to high (a.k.a will turn off all leds)
 GPIO.output(ledPinGreen, GPIO.HIGH) # setting the gpio pin to high (a.k.a will turn off all leds)
-
-
-
-
-
-
-
 
 
 while True: # infinite loop
@@ -65,3 +56,8 @@ while True: # infinite loop
                 SetAngle(90)
         else:
                 print("no switch position, dormant")
+                
+                
+#::END::#
+# ~~~  Python program for ist 
+#      smart door-lock project  ~~~
