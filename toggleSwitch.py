@@ -1,9 +1,16 @@
+#::START::#
+# AUTHOR: JAMES COATES - 2022 # 
+# ~~~  Python program for ist 
+#      smart door-lock project  ~~~
+
+# START: Importing Dependencies/Librarys
 import RPi.GPIO as GPIO
 import time 
-
 from time import sleep 
+# END: Importing Dependencies/Librarys
 
-buttonInput = 29
+
+buttonInput = 29 # 
 returnGPIOpin = 31
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(buttonInput, GPIO.IN, pull_up_down=GPIO.PUD_UP)
