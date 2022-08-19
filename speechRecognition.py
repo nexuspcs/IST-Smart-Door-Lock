@@ -57,7 +57,7 @@ def SpeakText(command):
         engine.say(command)
         engine.runAndWait()
         
-        
+        d
 # Loop infinitely for user to speak (a.k.a waiting for user input) 
 while(1):
         
