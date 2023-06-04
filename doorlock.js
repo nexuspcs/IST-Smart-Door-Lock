@@ -13,7 +13,7 @@
 
 var BLYNK_TEMPLATE_ID = 'TMPLISLOZuxh' // This ID is your 'Orginisations' template ID, which is just my personal account in my use case.
 var BLYNK_DEVICE_NAME = 'Door1' // Device name is the name you will see in the Blynk app
-var BLYNK_AUTH_TOKEN = 'JMWyTq4EIyRiUv0aUTmnU7SIuhlz****' // my accounts auth token, which you wont be able to do anything with unless you have my email as well. LAST 4 characters a redacted due to privacy...
+var BLYNK_AUTH_TOKEN = 'JMWyTq4EIyRiUv0aUTmn************' // my accounts auth token, which you wont be able to do anything with unless you have my email as well. LAST 12 characters a redacted due to privacy...
 var SERVER_ADDR = 'https://sgp1.blynk.cloud/' // Sinapore server address
 
 //*** SMARTPHONE DOORLOCK ***//
@@ -84,7 +84,7 @@ var buttonPin = 4
 var ledPinGreen = 17
 var ledPinRed = 11 
 
-var blynkToken = 'JMWyTq4EIyRiUv0aUTmnU7SIuhlzWIrE'; // redefine as i already wrote the code, but i need to define the value twice, once for BlynkAUTH, and once for BlynkCONNECTION
+var blynkToken = 'JMWyTq4EIyRiUv0aUTmn************'; // redefine as i already wrote the code, but i need to define the value twice, once for BlynkAUTH, and once for BlynkCONNECTION
 
 
 
